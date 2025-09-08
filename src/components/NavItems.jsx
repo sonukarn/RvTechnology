@@ -41,8 +41,8 @@ export const NAV_ITEMS = [
     path: "/services",
     submenu: [
       {
-        title: "AI Development",
-        path: "/services/ai",
+        title: "Microsoft 365",
+        path: "/services/microsoft365",
         icon: <Brain size={16} />,
       },
       {
@@ -158,7 +158,7 @@ export const NAV_ITEMS = [
   },
 
   { title: "Industries", path: "/industries", submenu: [] },
-  { title: "Hire", path: "/hire", submenu: [] },
+  { title: "MicroSoft 365", path: "/microsoft-365", submenu: [] },
   { title: "Insights", path: "/insights", submenu: [] },
   { title: "Company", path: "/company", submenu: [] },
 ];

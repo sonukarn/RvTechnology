@@ -2,6 +2,8 @@ import { lazy, Suspense } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Layout from "@/components/Layout";
 import useRestoreScrollOnRefresh from "./hooks/useScrollRestoration";
+import Header from "./components/microsoft365ui/Header";
+import Microsoft365 from "./pages/Microsoft365";
 
 const Home = lazy(() => import("@/pages/Home"));
 const Services = lazy(() => import("@/pages/Services"));
@@ -20,6 +22,7 @@ export default function App() {
         <Route element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="services/*" element={<Services />} />
+          <Route path="microsoft-365" element={<Microsoft365 />} />
           <Route path="technologies" element={<Technologies />} />
           <Route path="industries" element={<Industries />} />
           <Route path="hire" element={<Hire />} />
